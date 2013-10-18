@@ -11,7 +11,10 @@ public class Homework6 {
         test.insertItem("Hello", 2);
         test.insertItem("hi", 3);
         test.insertItem("Hello", 4);
+        test.insertItem("Yo", 7);
         test.insertItem("Hello", 10);
+        test.insertItem("Howdy", 9);
+        test.insertItem("Hi", 8);
         System.out.println(test);
 
         /*
@@ -57,12 +60,14 @@ class List {
     }
 
     public void insertItem(Object insert, int index) {
-        Object[] temp = new Object[listArray.length];
-        for (int i = 0; i < listArray.length; i++) {
-            temp[i] = listArray[i];
-            temp[index - 1] = listArray[i];
+        Object[] temp = new Object[listArray.length + 1];
+        for (int i = listArray.length; i > index; i--) {
+            temp[i] = listArray[i - 1];
         }
         temp[index - 1] = insert;
+        for (int i = 0; i < index - 1; i++) {
+            temp[i] = listArray[i];
+        }
         listArray = temp;
         count++;
     }
