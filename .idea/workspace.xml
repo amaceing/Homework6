@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29c2aec6-9e94-4756-8bca-fb75b39698c5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Homework6.java" afterPath="$PROJECT_DIR$/src/Homework6.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Homework6.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Homework6.java" changelist="29c2aec6-9e94-4756-8bca-fb75b39698c5" time="1382156041055" ignored="false" />
-    <file path="/Dummy.txt" changelist="29c2aec6-9e94-4756-8bca-fb75b39698c5" time="1382154542915" ignored="false" />
+    <file path="/Dummy.txt" changelist="29c2aec6-9e94-4756-8bca-fb75b39698c5" time="1382156160325" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -342,7 +341,11 @@
       <created>1382146779270</created>
       <updated>1382146779270</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tests List class">
+      <created>1382156174177</created>
+      <updated>1382156174177</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -413,7 +416,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="implements getIndex, works on fixing insertItem" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests List class" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -430,6 +433,7 @@
     <MESSAGE value="works on implementing insertItem" />
     <MESSAGE value="correctly moves elements down in insertItem" />
     <MESSAGE value="implements getIndex, works on fixing insertItem" />
+    <MESSAGE value="tests List class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
