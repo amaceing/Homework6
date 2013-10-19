@@ -1,17 +1,21 @@
 //Anthony Mace  CSC205AB
-//This program is design to implement, use, and manipulate
+//This program is designed to implement, use, and manipulate
 //a list
 
 public class Homework6 {
     public static void main(String[] args) {
         List test = new List();
         test.insertItem("Hi", 1);
-        test.insertItem("Hey", 2);
-        test.insertItem("Yo", 3);
-        test.insertItem("Hi", 4);
-        test.insertItem("Howdy", 5);
-        System.out.println(test.getListItem(2));
-        System.out.println(test.getIndex("Howdy"));
+        test.insertItem("Hello", 2);
+        test.insertItem("Hey", 3);
+        test.insertItem("Test", 2);
+        test.insertItem("Done", 4);
+        test.insertItem("DoneDone", 6);
+        test.insertItem("Done", 4);
+        test.insertItem("Emily", 8);
+        test.insertItem("Test2", 10);
+        System.out.println(test.getListItem(8));
+        System.out.println(test.getIndex("Emily"));
         System.out.println(test);
     }
 
@@ -26,12 +30,12 @@ class List {
 
     public List() {
         count = 0;
-        listArray = new Object[5];
+        listArray = new Object[50];
     }
 
     public Object getListItem(int index) {
         Object item = null;
-        for (int i = 0; i < listArray.length; i++) {
+        for (int i = 0; i < count; i++) {
             if ((i + 1) == index) {
                 item = listArray[i];
             }
@@ -40,16 +44,22 @@ class List {
     }
 
     public void insertItem(Object insert, int index) {
-        Object[] temp = new Object[listArray.length + 1];
-        for (int i = count; i > index; i--) {
-            temp[i] = listArray[i - 1];
+        boolean ignore = false;
+        Object[] temp = null;
+        if (index > count + 1) {
+            ignore = true;
+        } else {
+            temp = new Object[listArray.length + 1];
+            for (int i = 0; i < index - 1; i++ ) {
+                temp[i] = listArray[i];
+            }
+            temp[index - 1] = insert;
+            for (int i = index; i <= count; i++) {
+                temp[i] = listArray[i - 1];
+            }
+            listArray = temp;
+            count++;
         }
-        temp[index - 1] = insert;
-        for (int i = 0; i < index - 1; i++) {
-            temp[i] = listArray[i];
-        }
-        listArray = temp;
-        count++;
     }
 
     public int getIndex(Object search) {
@@ -66,8 +76,6 @@ class List {
 
     public String toString() {
         String currentList = "";
-        System.out.println(listArray.length);
-        System.out.println(count);
         for (int i = 0; i < count; i++) {
             currentList += listArray[i] + "\n";
         }
