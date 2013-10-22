@@ -3,28 +3,6 @@
 //a list
 
 public class Homework6 {
-    public static void main(String[] args) {
-        List test = new List();
-        test.insertItem("Hi", 1);
-        test.insertItem("Hello", 2);
-        test.insertItem("Hey", 3);
-        test.insertItem("Test", 2);
-        test.insertItem("Done", 4);
-        test.insertItem("DoneDone", 6);
-        test.insertItem("Done", 4);
-        test.insertItem("Emily", 8);
-        test.insertItem("Test2", 10);
-        System.out.println(test.getListItem(8));
-        System.out.println(test.getIndex("Emily"));
-        System.out.println(test);
-    }
-
-    public static void insertInt(int insert, int index) {
-
-    }
-}
-
-class List {
     private Object listArray[];
     private int count;
 
